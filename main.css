@@ -18,22 +18,35 @@ body {
     box-shadow: 0 2px 5px hsla(115, 77%, 39%, 0.3);
 }
 
+
 .navigatie {
-    padding: 10px;
-    overflow: scroll;
-    display: grid;
-    gap: 150px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    top: 45px;
-    left: 0;
-    position: fixed;
-    background: #b98b28;
+display: inline;
+background: #b98b28;
+ box-sizing: border-box;
 }
 
-.footer {
+@media screen  and (min-width: 700px) {
+    body{
+
+
+    }
+    .footer {
 
     display: grid;
     gap: 200px;
     grid-template-columns: 1fr 1fr 1fr;
     height: 1px;
 }
+}
+@media screen  and (max-width: 700px) {
+
+
+    }
+      .footer {
+
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 1px;
+}
+
